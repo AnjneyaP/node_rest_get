@@ -1,9 +1,10 @@
 /* jshint node: true */
 const express = require("express");
-
+const mongoose = require("mongoose");
 const app = express();
 const userRouter = require('./route/userroute');
 const port = process.env.PORT || 3000;
+const db = mongoose.connect('mongodb://localhost/bookAPI')
 
 
 
