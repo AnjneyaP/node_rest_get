@@ -7,8 +7,6 @@ const port = process.env.PORT || 3000;
 const db = mongoose.connect('mongodb://localhost/bookAPI')
 
 
-
-
 app.use('/api',userRouter);
 
 app.get('/', (req, res) => {
